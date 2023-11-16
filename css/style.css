@@ -1,0 +1,704 @@
+/* ======================== menu css star ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ------------------------ menu css end -------------------------- */
+/* ======================== menu css star ========================= */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,a,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+/* ------------------------ menu css end -------------------------- */
+/* ======================== menu css star ========================= */
+:root{
+    --Poppins:'Poppins', sans-serif;
+    --band_color:#F40404;
+    --pramary_color:#6C6C6C;
+}
+/* ------------------------ menu css end -------------------------- */
+/* ======================== header css star ========================= */
+header{
+    width: 100%;
+    height: 51px !important;
+    background: #282828;
+    border-bottom: 5px solid #FFB800;
+    line-height: 51px;
+}
+.mail a{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--Poppins);
+    color: #fff;
+}
+.mail a span{
+    margin-right: 5px;
+}
+.mail .border{
+    width: 1px;
+    height: 15px !important;
+    background: #5C6A92 !important;
+    margin-left: 27px;
+}
+.phone a{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--Poppins);
+    color: #fff;
+    margin-left: 10px;
+}
+.phone a span{
+    margin-right: 5px;
+}
+.header_icon{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 19px;
+}
+.header_icon .header_icon_item a{
+    color: #fff;
+}
+/* ------------------------ header css end -------------------------- */
+/* ======================== menu css star ========================= */
+.main_menu{
+    width: 100%;
+    height: 105px;
+    background: var(--band_color);
+}
+.menu_fixed {
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: var(--band_color);
+    transition: all linear 0.5s;
+    z-index: 999;
+}
+.main_menu ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    color: #fff !important;
+    margin-left: 47px;
+    position: relative;
+}
+.main_menu ul li a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 8px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.main_menu ul li a:hover::after{
+    transform: scale(1);
+}
+.menu_button a{
+    width: 142px;
+    height: 51px;
+    background: transparent;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    color: #fff !important;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+}
+.menu_button a:hover{
+    color: var(--band_color) !important;
+}
+.menu_button a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.menu_button a:hover::after{
+    transform: scaleX(1);
+}
+/* ------------------------ menu css end -------------------------- */
+/* ======================== banner css star ========================= */
+#banner{
+    width: 100%;
+    background: url(../image/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 257px 0;
+}
+.banner_head h1{
+    width: 842px;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--Poppins);
+    color: #fff ;
+}
+.banner_button a{
+    width: 186px;
+    height: 51px;
+    background: var(--band_color);
+    border: 2px solid var(--band_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    color: #fff;
+    margin-top: 31px;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+}
+.banner_button a:hover{
+    color: var(--band_color) !important;
+}
+.banner_button a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+}
+.banner_button a:hover::after{
+    transform: scaleX(1);
+}
+/* ------------------------ banner css end -------------------------- */
+/* ======================== supplier_country css star ========================= */
+#supplier_country{
+    padding: 48px 0 28px;
+}
+.supplier_country_head h2{
+    width: 289px;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: var(--Poppins);
+    color: #000 ;
+}
+.supplier_country_text p{
+    width: 651px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--Poppins);
+    color: var(--pramary_color);
+    margin-top: 73px;
+}
+.supplier_country_img{
+    margin-top: 100px;
+}
+.supplier_country_img_item{
+    width: 458px;
+}
+
+/* ------------------------ supplier_country css end -------------------------- */
+/* ======================== our_service css star ========================= */
+#our_service{
+    width: 100%;
+}
+.our_service_part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service_heading{
+    width: 50%;
+}
+.service_heading .container{
+    width: 600px;
+    margin: 0 auto;
+}
+.service_head h2{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--Poppins);
+    color: #000;
+}
+.service_head p{
+    width: 405px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--Poppins);
+    color: var(--pramary_color);
+    /* margin-left: 149px; */
+}
+.our_service_img{
+    width: 50%;
+    background: url(../image/service1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 147px 116px 139px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.our_service_img::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.60);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.our_service_img_head h3{
+    width: 691px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--Poppins);
+    color: #fff ;
+}
+.our_service_img_button a{
+    width: 162px;
+    height: 51px;
+    background: #fff;
+    border: 2px solid var(--band_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    color: #fff;
+    margin-top: 31px;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+    overflow: hidden;
+}
+.our_service_img_button a:hover{
+    color: var(--band_color) !important;
+}
+.our_service_img_button a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--band_color);
+    border-radius: 50%;
+    transform: scale(1.5);
+    z-index: -1;
+    transition: transform 0.4s ease-in-out;
+    
+}
+.our_service_img_button a:hover::after{
+    transform: scale(0);
+}
+.service_img2{
+    background: url(../image/service2.png);
+}
+.service_img3{
+    background: url(../image/service3.png);
+}
+/* ------------------------ our_service css end -------------------------- */
+/* ======================== about css star ========================= */
+#about{
+    width: 100%;
+    padding: 136px 0;
+    background: #F0F0F0;
+}
+.about_head{
+    width: 440px;
+    background: var(--band_color);
+    padding: 116px 74px 115px;
+}
+.about_head h2{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--Poppins);
+    color: #fff ;
+}
+.about_img{
+    width: 100%;
+    background: url(../image/company.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 168px 0 142px;
+}
+.about_button a{
+    width: 162px;
+    height: 51px;
+    background: #fff;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    color: var(--band_color);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+}
+.about_button a:hover{
+    color: #fff;
+}
+.about_button a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--band_color);
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: right;
+}
+.about_button a:hover::after{
+    transform: scaleX(1);
+}
+/* ------------------------ about css end -------------------------- */
+/* ======================== logo css star ========================= */
+#logo{
+    padding: 117px 0;
+}
+/* ------------------------ logo css end -------------------------- */
+/* ======================== blog css star ========================= */
+#blog{
+    padding: 110px 0;
+    background: #f0f0f0;
+}
+.blog_item{
+    width: 339px;
+    background: url(../image/blog1.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    padding: 75px 0 55px 46px;
+    position: relative;
+    z-index: 1;
+}
+.blog_item::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.60);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.blog_item .blog_head h2{
+    width: 249px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--Poppins);
+    color: #fff ;
+}
+
+.blog_button a{
+    width: 123px;
+    height: 39px;
+    background: rgba(255, 255, 255, 0.50);
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    color: #fff;
+    margin-top: 52px;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+}
+.blog_button a:hover{
+    color: var(--band_color) ;
+}
+.blog_button a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.blog_button a:hover::after{
+    transform: scaleX(1);
+}
+.blog_item2{
+    background: url(../image/blog2.png);
+}
+.blog_item3{
+    background: url(../image/blog3.png);
+}
+.blog_read_more a{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--Poppins);
+    color: #000 ;
+    margin: 29px 0 0 126px;
+    position: relative;
+    transition: all linear 0.3s;
+}
+.blog_read_more a:hover{
+    color: var(--band_color);
+}
+.blog_read_more a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background:var(--band_color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+}
+.blog_read_more a:hover::after{
+    transform: scale(1);
+}
+/* ------------------------ blog css end -------------------------- */
+/* ======================== map css star ========================= */
+.map_heading{
+    width: 100%;
+    height: 145px;
+    background: var(--band_color);
+    border-bottom: 2px solid #FFB800;
+}
+.map_head h2{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--Poppins);
+    color: #fff ;
+    margin-top: 52px;
+}
+.map_button a{
+    width: 142px;
+    height: 51px;
+    background:transparent;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--Poppins);
+    color: #fff;
+    margin-top: 47px;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+}
+.map_button a:hover{
+    color: var(--band_color) !important;
+}
+.map_button a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+}
+.map_button a:hover::after{
+    transform: scaleX(1);
+}
+/* ------------------------ map css end -------------------------- */
+/* ======================== footer css star ========================= */
+#footer{
+    padding: 149px 0 170px;
+    background: #1F1F1F;
+}
+.footer_logo{
+    width: 192px;
+}
+.contract_information ul{
+    margin-top: 33px;
+}
+.contract_information ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--Poppins);
+    color: #fff;
+    margin-bottom: 15px;
+}
+.contract_information ul li a span{
+    margin-right: 5px;
+}
+.footer_icon{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.footer_icon_item a{
+    width: 29px;
+    height: 29px;
+    background: var(--band_color);
+    border: 1px solid var(--band_color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    transition: all linear 0.3s;
+}
+.footer_icon_item a:hover{
+    background: transparent;
+    color: var(--band_color);
+}
+.company_head h2{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--Poppins);
+    color: #fff ;
+    margin-top: 32px;
+}
+.company_information ul{
+    margin-top: 21px;
+}
+.company_information ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--Poppins);
+    color: #fff;
+    margin-bottom: 15px;
+    position: relative;
+}
+.company_information ul li a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: right;
+}
+.company_information ul li a:hover::after{
+    transform: scale(1);
+}
+.certificate_card{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.Certificate{
+    width: 110px;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21px;
+}
+.Certificate h4{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--Poppins);
+    color: #008AD8 ;
+}
+.Certificate p{
+    font-size: 8px;
+    font-weight: 500;
+    font-family: var(--Poppins);
+    color: #008AD8 ;
+}
+.Certificate h5{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--Poppins);
+    color: #980077 ;
+}
+.Certificate h5 span{
+    color: #009818;
+}
+.back_to_top a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--band_color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+}
+.copy_right{
+    width: 100%;
+    height: 109px;
+    background: #282828;
+}
+.copyright_text p{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--Poppins);
+    color: #6C6C6C;
+    line-height: 109px;
+}
+/* ------------------------ menu css end -------------------------- */
